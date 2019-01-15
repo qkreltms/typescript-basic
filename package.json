@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "pre": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "global": "^4.3.2",
     "typescript": "^3.2.2"
   }
 }
